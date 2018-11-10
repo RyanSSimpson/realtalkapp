@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Courgette';
+    src: url('fonts/courgette/Courgette-Regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}  
+
+@font-face {
+    font-family: 'Kalam';
+    src: url('fonts/Kalam/Kalam-Light.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}  
+
+html {
+    height: 100%;
+    /*font-family: 'Tajawal', sans-serif;*/
+    /*font-family: 'Courgette', cursive;*/
+    
+    font-family: 'Courgette', cursive;
+}
+
+body {
+    height: 100%;
+    min-height: 100%;
+    background: #041229;
+    color: white;
+}
+
+.hoverable:hover {
+    cursor: pointer;
+}
+
+.back {
+    font-size: 32px;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    padding-top: 10px;
+    left: 5%;
+    z-index: 100;
+    background: #041229;
+}
+
+.next {
+    position: fixed;
+    right: 5%;
+    bottom: 2%;
+    font-size: 32px;
+    overflow: hidden;
+}
+
+.title {
+    text-align: center;
+    font-size: 48px;
+    font-family: 'Courgette', cursive;
+    position: fixed;
+    top: 25%;
+    right: 50%;
+    width: 100%;
+    transform: translateY(-50%) translateX(50%);
+}
+
+.subtitles {
+    width: 155px;
+    position: fixed;
+    top: 40%;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.subtitle {
+    text-align: right;
+    font-size: 32px;
+    margin: 12px 0px;
+    padding: 0px;
+    right: 0px;
+}
+
+.app-container {
+    width: 100%;
+    height: 100%;
+}
+
+.end-container {
+    text-align: center;
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    width: 80%;
+}
+
+.about-container {
+    color: white;
+    text-align: center;
+    width: 80%;
+    left: 10%;
+    padding-top: 65px;
+    position: relative;
+}
+
+.question-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    width: 80%;
+    padding-top: 65px;
+    text-align: center;
+}
+
+.question {
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.about-description {
+    font-size: 18px;
+}
+
+#about-title {
+    margin-bottom: 30px;
+}
+
+.about-subtitle {
+    font-size: 24px;
+}
+
+.about-paragraph {
+    padding-bottom: 15px;
+    font-size: 20px;
+}
+
+.move-right-fade {
+    animation-name: move-right-fade;
+    animation-duration: 1s;
+}
+
+@keyframes move-right-fade {
+    from {opacity: 1; transform: translate(0,0);}
+    to {opacity: 0; transform: translate(100px,0);}
+}
+
+.animation-test {
+    position: fixed ;
+    left: 20%;
+    top: 20%;
+}
+
+.move-right {
+    animation-name: move-right;
+    animation-duration: 1s;
+}
+
+@keyframes move-right {
+    from {transform: translate(0,0);}
+    to {transform: translate(100px,0);}
+}
+
+.fade {
+    animation: fade 1s forwards;
+}
+
+@keyframes fade {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+.quick-fade {
+    animation: fade 0.5s forwards;
+}
+
+.fade-in{
+    -webkit-animation: fadein 2s forwards; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s forwards; /* Firefox < 16 */
+        -ms-animation: fadein 2s forwards; /* Internet Explorer */
+         -o-animation: fadein 2s forwards; /* Opera < 12.1 */
+            animation: fadein 2s forwards;
+}
+
+.quick-fade-in {
+    -webkit-animation: fadein 1s forwards; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1s forwards; /* Firefox < 16 */
+        -ms-animation: fadein 1s forwards; /* Internet Explorer */
+         -o-animation: fadein 1s forwards; /* Opera < 12.1 */
+            animation: fadein 1s forwards;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.fade-out-2{
+    -webkit-animation: fadeout2 1s forwards; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadeout2 1s forwards; /* Firefox < 16 */
+        -ms-animation: fadeout2 1s forwards; /* Internet Explorer */
+         -o-animation: fadeout2 1s forwards; /* Opera < 12.1 */
+            animation: fadeout2 1s forwards;
+}
+
+@keyframes fadeout2 {
+    from { opacity: 1; }
+    to   { opacity: 0.2; }
+}

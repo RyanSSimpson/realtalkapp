@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>real talk</title>
+        <link rel="stylesheet" href="styles.css">
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="questions.js"></script>
+        <script type="text/javascript" src="ends.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+        <!--<link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Lobster+Two|Roboto+Slab|Tajawal|Playball|Hi+Melody" rel="stylesheet"> -->
+    </head>
+    <body>
+        <div class="back hoverable" id="back" onclick="back();">home</div>
+        <div class="next hoverable" id="next" onclick="next();">next</div>
+        <div class="app-container">
+            <div class="home-container fade-in">
+                <h1 class="title">real talk</h1>
+                <div class="subtitles">
+                    <h3 class="subtitle hoverable" id="start-text" onclick="start();">start</h3>
+                    <h3 class="subtitle hoverable" id="about-text" onclick="about();">about</h3>
+                </div>
+            </div>
+            <div id="question-container" class="question-container">
+                <p id="q1" class="question fade-in">1. Who?</p>
+                <p id="q2" class="question fade-in">2. What?</p>
+                <p id="q3" class="question fade-in">3. When?</p>
+                <p id="q4" class="question fade-in">4. Where?</p>
+                <p id="q5" class="question fade-in">5. Why?</p>
+            </div>
+            <div id="end-container" class="end-container">
+                <p id="end" class="end">goodbye for now my friend</p>
+            </div>
+            <div class="about-container fade-in">
+                <div class="about-description">
+                    <p class="about-paragraph">
+                        <strong class="about-subtitle">What is this?</strong><br>
+                        A simple way to reflect on life. Sometimes the trick is just being exposed to the right question at the right time,
+                        and hopefully this little app can help fill that role.
+                    </p>
+                    <p class="about-paragraph">
+                        <strong>Who am I?</strong><br>
+                        The answer to this question is within you. As you spend time honestly introspecting, you will chip away at yourself.
+                        Daily reflection develops wisdom and understanding.
+                    </p>
+                    <p class="about-paragraph">
+                        <strong>Contact</strong><br>
+                        I'm just an introvert with the habit of introspecting. Feel free to drop by with any suggestions at realtalkappryan@gmail.com
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            initialise();
+        </script>
+    </body>
+</html>
